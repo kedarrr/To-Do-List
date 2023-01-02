@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="icon" type="image/x-icon" href="/images/large icon.png">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<h1>
+            Create your Todo list 
+            <img src="images/large icon.png" 
+                width="45px" 
+                alt="todo icon"> 
+        </h1>
+		<form id="list-form">
+			<input 
+				type="text" 
+				name="list-input" 
+				id="list-input" 
+				placeholder="e.g. Read a book." />
+			<input 
+				type="submit"
+				id="list-submit" 
+				placeholder="Submit"
+                value="Add to list" />
+		</form>
+	</header>
+	<main>
+		<section class="todo-list">
+			<h2>Your list</h2>
+
+			<div id="list">
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Read a book."
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+            
+		</section>
+	</main>
+    <footer>
+        <h2>
+            Manage your work and time with the help of a list.
+        </h2>
+        <br>
+        <h3> Create a list: 
+            <br>1] Add your tasks. 
+            <br>2] Edit the task if needed.
+            <br>3] Save the task after edit.
+            <br>4] Delete the task after completion.
+        </h3>
+        <br>
+        <h2>
+            Improve your work-time relationship.
+        </h2>
+    </footer>
+
+	<script src="main.js"></script>
+</body>
+</html>
